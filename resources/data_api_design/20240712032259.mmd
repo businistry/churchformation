@@ -1,0 +1,78 @@
+
+classDiagram
+    class User {
+        +str email
+        +str password
+        +str first_name
+        +str last_name
+        +datetime date_joined
+        +bool is_active
+        +bool is_staff
+        +create_user(email: str, password: str, **extra_fields) User
+        +create_superuser(email: str, password: str, **extra_fields) User
+    }
+
+    class ServiceTier {
+        +str name
+        +str description
+        +float price
+        +bool is_full_service
+        +list[str] features
+    }
+
+    class ClientProject {
+        +User client
+        +ServiceTier service_tier
+        +str project_name
+        +datetime start_date
+        +str status
+        +JsonField progress
+        +start_project()
+        +update_progress(step: str, status: str)
+        +complete_project()
+    }
+
+    class Resource {
+        +str title
+        +str description
+        +str file_type
+        +str file_url
+        +list[str] tags
+        +bool is_premium
+    }
+
+    class Consultant {
+        +User user
+        +str specialization
+        +text bio
+        +float hourly_rate
+        +bool is_available
+    }
+
+    class Appointment {
+        +Consultant consultant
+        +ClientProject project
+        +datetime start_time
+        +datetime end_time
+        +str status
+        +schedule()
+        +cancel()
+        +complete()
+    }
+
+    class Payment {
+        +User user
+        +float amount
+        +str stripe_charge_id
+        +datetime timestamp
+        +str status
+        +process_payment()
+        +refund()
+    }
+
+    User "1" -- "*" ClientProject
+    ServiceTier "1" -- "*" ClientProject
+    User "1" -- "1" Consultant
+    ClientProject "1" -- "*" Appointment
+    Consultant "1" -- "*" Appointment
+    User "1" -- "*" Payment

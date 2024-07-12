@@ -1,0 +1,31 @@
+Project Title: Development of Tiered Service Offerings for Church Formation
+
+Objective: To create a comprehensive set of service offerings that assist individuals and groups in starting a church. The services will include one self-service option and multiple full-service tiers, combining automated and manual processes to cater to different levels of need and budget.
+
+Target Audience: The target audience includes individuals or small groups with limited budgets who prefer a DIY approach, as well as individuals or groups seeking comprehensive, hands-on assistance with minimal DIY effort.
+
+Service Tiers:
+
+Self-Service Option
+The Self-Service Option is designed for individuals or small groups with limited budgets who are comfortable with a DIY approach. The features include an online checklist and roadmap for the steps required to start a church, access to templates for Articles of Incorporation, bylaws, and board resolutions, step-by-step instructions for applying for an EIN online, detailed guides on conducting a SWOT analysis, drafting a mission statement, and creating a vision, and limited email support for general questions.
+
+Full-Service Options
+The Full-Service Options are intended for individuals or groups seeking comprehensive assistance with minimal DIY effort.
+
+Tier 1: Standard Full-Service Package
+
+The Standard Full-Service Package includes a one-time consultation to understand the client's needs and goals, drafting of Articles of Incorporation, bylaws, and other essential documents, EIN application completed by the service provider, assistance with filing the Articles of Incorporation with the state, help with completing and filing the application for federal tax-exempt status, initial advice on setting up a church website and social media profiles, and comprehensive email support throughout the process.
+
+Tier 2: Premium Full-Service Package
+
+The Premium Full-Service Package includes all features of the Standard Package. Additionally, it offers a dedicated consultant to guide through the entire process, professional drafting of all required documents, assistance with applying for state and local tax-exempt status, help with preparing the necessary documentation to open a church bank account, development of a basic marketing plan including social media strategy and website setup, regular updates and reminders for annual filings and compliance requirements, and direct phone support for immediate assistance and complex queries.
+
+Tier 3: Elite Full-Service Package
+
+The Elite Full-Service Package includes all features of the Premium Package. It also provides in-depth sessions with consultants to develop a strategic plan including SWOT analysis and long-term vision, a custom fundraising plan tailored to the church’s needs and goals, assistance with setting up a church website, social media profiles, online donation systems, and CRM, support with recruiting staff and volunteers including drafting job descriptions and onboarding processes, complete management of all compliance-related tasks including IRS and state filings, employment law compliance, and data privacy regulations, support in planning and executing the church’s launch event including marketing, logistics, and follow-up strategies, and tailored workshops on specific topics like leadership development, financial stewardship, or community engagement.
+
+Implementation Plan
+The implementation plan involves a combination of automated and manual processes. Automated processes will include developing online checklists and roadmaps, creating form-filling tools for state and federal documents, building a library of templates and resource guides, and establishing a basic email support system. Manual processes will include conducting personalized consultations and strategic planning sessions, drafting and reviewing custom documents, handling application services for EIN and tax-exempt status, managing compliance-related tasks comprehensively, providing advanced marketing and HR services, and planning and executing launch events.
+
+Deliverables
+The deliverables include detailed service descriptions for each tier, automated tools and templates for the self-service option, comprehensive support materials and documentation for full-service packages, and marketing materials to promote the different service tiers.

@@ -1,0 +1,59 @@
+
+sequenceDiagram
+    participant C as Client
+    participant V as Views
+    participant M as Models
+    participant S as Serializers
+    participant T as Tasks
+    participant P as Payment Gateway
+
+    C->>V: Register user
+    V->>M: User.create_user()
+    M-->>V: User instance
+    V-->>C: Registration confirmation
+
+    C->>V: Login
+    V->>M: User.authenticate()
+    M-->>V: User instance
+    V-->>C: Login confirmation
+
+    C->>V: Get service tiers
+    V->>M: ServiceTier.objects.all()
+    M-->>V: ServiceTier queryset
+    V->>S: ServiceTierSerializer(queryset)
+    S-->>V: Serialized data
+    V-->>C: Service tier list
+
+    C->>V: Select service tier
+    V->>M: ServiceTier.objects.get()
+    M-->>V: ServiceTier instance
+    V->>M: ClientProject.objects.create()
+    M-->>V: ClientProject instance
+    V->>P: Process payment
+    P-->>V: Payment confirmation
+    V->>M: Payment.objects.create()
+    M-->>V: Payment instance
+    V-->>C: Project creation confirmation
+
+    C->>V: Access resources
+    V->>M: Resource.objects.filter()
+    M-->>V: Resource queryset
+    V->>S: ResourceSerializer(queryset)
+    S-->>V: Serialized data
+    V-->>C: Resource list
+
+    C->>V: Request consultant appointment
+    V->>M: Consultant.objects.filter()
+    M-->>V: Consultant queryset
+    V->>M: Appointment.objects.create()
+    M-->>V: Appointment instance
+    V->>T: send_appointment_notification
+    T-->>V: Task scheduled
+    V-->>C: Appointment confirmation
+
+    C->>V: Update project progress
+    V->>M: ClientProject.objects.get()
+    M-->>V: ClientProject instance
+    V->>M: ClientProject.update_progress()
+    M-->>V: Updated instance
+    V-->>C: Progress update confirmation
